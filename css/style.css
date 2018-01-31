@@ -10,9 +10,12 @@ body{
     color: dimgray;
     font-family: 'Alegreya', sans-serif;
     margin: 0;
-    background-image: url(img/topbanner.jpeg);
+    background-image: url(../img/erststopbild.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
+    background-position: 0px 80px; 
+}
 }
 h2{
     font-size: 250%;
@@ -50,6 +53,12 @@ header{
     height: 86px;
 }
 .wrapper{
+    margin-top: 290px;
+    background-color: #FFF;
+    width: 100%;
+    float: left;
+}
+.wrapper-inner{
     margin-top: 160px;
     max-width: 1400px;
     margin: 0 auto;
@@ -128,11 +137,7 @@ nav ul li a:hover{
 #social{
     background-color: #A2B2C1;
 }
-.wrapper2{
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
+
 .container_100i{
     border: 3px solid green;
     padding: 10px;
@@ -307,6 +312,9 @@ footer.second p{
         text-align: center;
         width: 100%;
         padding: 10px 0 10px 0;
+    }
+	 .wrapper{
+        margin-top: 180px;
     }
     .banner{
         padding-top: 86px;
