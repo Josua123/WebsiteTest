@@ -307,16 +307,41 @@ footer.second p{
 /*Media Querrys für Mobileseite*/
 @media screen and (max-width: 768px){
     h2{
-        font-size: 150%;
+        font-size: 120%;
     }
     h3{
-        font-size: 125%;
+        font-size: 105%;
     }
     p{
-        font-size: 120%;
+        font-size: 100%;
+        width: 100%;
     }
     header{
         position: absolute;
+    }
+    .social{
+        font-size: 50%;
+    }
+    #bannerlinks{
+        margin-top: 100px;
+        width: 100%;
+        float:left;
+    }
+    .container100i{
+        margin: 0px;
+        border: 0px;
+        width: 100%;
+        float: left;
+    }
+    .two-third{
+        width: 100%;
+        float: left;
+    }
+    #banner{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
     }
     #logo{
         margin: 15px 0 20px -25px;
