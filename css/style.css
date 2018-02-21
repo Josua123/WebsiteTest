@@ -75,10 +75,10 @@ header{
     margin: 0 auto;
 }
 #logo{
-    float: left;
     width: 20%;
     height: 80px;
-    background: url(../img/sgtlogo.gif) no-repeat left; /*no-repeat = logo wiederhotl sich nicht, left = linksbündig, center wäre mittig*/
+    background: url(../img/sgtlogo2.png) no-repeat left; /*no-repeat = logo wiederhotl sich nicht, left = linksbündig, center wäre mittig*/
+    float: left;
 }
 /* Start Navigation style*/
 nav{
@@ -223,7 +223,6 @@ aside{
     text-align: center;
 }
 #bannerlinks{
-    margin-top: 20px;
     width: 33.33%;
     background-clip: white;
     float:left;
@@ -329,8 +328,6 @@ footer.second p{
         float:left;
     }
     .container100i{
-        margin: 0px;
-        border: 0px;
         width: 100%;
         float: left;
     }
@@ -711,7 +708,9 @@ table.blueTable tfoot .links a{
     
 }
 
-
+#intern{
+    margin: 240px;
+}
 
 
 
