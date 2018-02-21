@@ -75,15 +75,15 @@ header{
     margin: 0 auto;
 }
 #logo{
-    margin: 20px;
     float: left;
-    width: 200px;
-    height: 60px;
+    width: 20%;
+    height: 80px;
     background: url(../img/sgtlogo.gif) no-repeat left; /*no-repeat = logo wiederhotl sich nicht, left = linksbündig, center wäre mittig*/
 }
 /* Start Navigation style*/
 nav{
     float: right;
+    width: 48%;
     padding: 25px 20px 0 0;
 }
 #menu-icon{
@@ -103,7 +103,7 @@ nav ul li{
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 150%;
     display: inline-block; /*nebeneinander*/
-    float: left;
+    float: right;
     padding: 10px;
 }
 nav ul li a {
@@ -320,10 +320,12 @@ footer.second p{
     }
     #logo{
         margin: 15px 0 20px -25px;
-        background: url(../img/sgtlogo.gif) no-repeat center;
+        background: url(../img/sgtlogo.gif);
+        display: none;
     }
     #menu-icon{
         display: inline-block;
+        float: right;
     }
     nav ul, nav:active ul {
         display: none;
@@ -583,8 +585,105 @@ table.blueTable tfoot .links a{
   text-decoration: none;
 }
 
+/*LOGIN*/
+#loginbereich{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 20%;
+	height: 50px;
+	-webkit-filter: blur(0px);
+    float: left;
+}
+.login{
+	position: absolute;
+	height: 60px;
+	width: 135px;
+	padding: 1px;
+	float: left;
+}
 
+.login input[type=text]{
+	width: 125px;
+	height: 15px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
 
+.login input[type=password]{
+	width: 125px;
+	height: 15px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 135px;
+	height: 25px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+.loginarea{
+    background-color: aliceblue;
+    width: 30%;
+    float:left;
+}
+
+.loginnext{
+    float:left;
+    
+}
 
 
 

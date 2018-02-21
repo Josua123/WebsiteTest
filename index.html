@@ -12,18 +12,30 @@
     <header>
         <div id="header-inner">
             <a href="index.html" id="logo"></a>
+       
+        <div class="loginarea">
+           <form name="login">
+                <div class="login">
+            <input type="text" placeholder="Username" name="userid">
+            <input type="password" placeholder="password" name="pswrd">
+            <input type="button" onclick="check(this.form)" value="Login" id="loginnext"/>
+                </div>
+            </form>  
+        </div>
+    
             <nav>
                 <a href="#" id="menu-icon"></a>
                 <ul>
-                    <li><a href="index.html" class="current">Aktuell</a></li>
-                    <li><a href="verein.html">Verein</a></li>
-                    <li><a href="regatta.html">Regatta</a></li>
                     <li><a href="anfahrt.html">Anfahrt/Impressum</a></li>
+                    <li><a href="regatta.html">Regatta</a></li>
+                    <li><a href="verein.html">Verein</a></li>
+                    <li><a href="index.html" class="current">Aktuell</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 <!--- Header ende--->
+     
 <div class="wrapper">
     <div class="wrapper-inner">
         <div class="banner">
@@ -31,7 +43,7 @@
             <h1>Herzlich Willkommen bei der Seglergemeinschaft Thalfingen</h1>
             </div>
             <div class="two-third">
-            <img src="img/Aktuell%20IMGP3334_HDR2.jpg" alt="Banner Anfahrt" id="banner">
+            <img src="img/Aktuell.jpg" alt="Banner Anfahrt" id="banner">
             </div>
         </div>
     </div>
@@ -52,7 +64,7 @@
         </section>
         <section class="two-third" id="plan">
         <h2>Terminplan für das Jahr 2017</h2>
-        <p><iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=de.german%23holiday%40group.v.calendar.google.com&amp;color=%238D6F47&amp;ctz=Europe%2FBerlin" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
+        <p><iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=de&amp;bgcolor=%23ffffff&amp;src=j0ue8a759in4vb9q0sk8g84764%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FBerlin" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></p>
         </section>
 </div>
     </div>
@@ -72,5 +84,21 @@
         <p>&copy; Seglergemeinschaft Thalfingen e.V</p>
     </footer>
 <!--- ende unterfooter--->
+    
+<!--- script für login --->
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "SGT" && form.pswrd.value == "sgt1")
+  {
+    window.open('https://josua123.github.io/WebsiteTest/regatta.html')
+  }
+ else
+ {
+   alert("falsches Password oder falscher Benutzername!")
+  }
+}
+</script>
 </body>
 </html>
