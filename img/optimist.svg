@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 76)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" i:viewOrigin="152.7441 697.2559" i:rulerOrigin="0 0" i:pageBounds="0 850.3936 850.3936 0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" width="544.5" height="544.5" viewBox="0 0 544.5 544.5" overflow="visible" enable-background="new 0 0 544.5 544.5" xml:space="preserve">
+	<metadata>
+		<variableSets xmlns="http://ns.adobe.com/Variables/1.0/">
+			<variableSet varSetName="binding1" locked="none">
+				<variables/>
+				<v:sampleDataSets xmlns="http://ns.adobe.com/GenericCustomNamespace/1.0/" xmlns:v="http://ns.adobe.com/Variables/1.0/"/>
+			</variableSet>
+		</variableSets>
+		<sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+			<slices/>
+			<sliceSourceBounds y="152.756" x="152.744" width="544.5" height="544.5" bottomLeftOrigin="true"/>
+		</sfw>
+	</metadata>
+	<g id="Ebene_1" i:layer="yes" i:dimmedPercent="50" i:rgbTrio="#4F008000FFFF">
+		<g>
+			<g>
+				<defs>
+					<path id="XMLID_1_" d="M0,0h544.5v544.5H0V0z"/>
+				</defs>
+				<clipPath id="XMLID_2_">
+					<use xlink:href="#XMLID_1_"/>
+				</clipPath>
+				<path i:knockout="Off" clip-path="url(#XMLID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M3.75,3.75H537      V537H3.75V3.75z"/>
+				<path i:knockout="Off" clip-path="url(#XMLID_2_)" fill-rule="evenodd" clip-rule="evenodd" d="M300.75,486v-3l-5.25-2.25V420      l23.25-5.25l21.75-7.5l21-9.75L381,384l18-15l15.75-17.25l13.5-19.5l10.5-21l7.5-21.75l5.25-22.5l2.25-24L453,219.75l-3.75-22.5      l-6.75-22.5l-9-21.75l-12.75-20.25l-14.25-18L390,98.25l-18.75-13.5l-20.25-12l-21.75-9l-22.5-6l-23.25-3h-24l-22.5,3L213.75,63      L192,72l-20.25,11.25L153,96.75l-17.25,16.5l-15,18l-12,20.25l-9.75,21L92.25,195l-4.5,22.5L87,240.75l1.5,24l5.25,22.5      l7.5,22.5l10.5,20.25l12.75,19.5l15.75,18l17.25,15L177,396l21,10.5l21.75,8.25l23.25,4.5v61.5l-4.5,2.25v3H300.75z       M300.75,248.25H238.5v3l4.5,3V360l-18.75-6L207,345.75l-15.75-11.25l-13.5-12.75l-12-15.75l-9-16.5l-6.75-18l-3.75-19.5      l-0.75-18.75l2.25-19.5l5.25-18l7.5-18L171,162l13.5-14.25L198.75,135l17.25-9.75l17.25-6.75L252,114l19.5-0.75l19.5,1.5      l18.75,4.5l17.25,7.5l16.5,9.75l15,12.75l12.75,14.25L381,180l7.5,17.25l5.25,18.75l1.5,19.5L394.5,255l-4.5,18.75l-6.75,18      l-9,16.5l-12,15L348,336l-16.5,11.25l-17.25,7.5l-18.75,6v-106.5l5.25-3V248.25z"/>
+			</g>
+		</g>
+	</g>
+</svg>

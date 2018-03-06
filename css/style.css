@@ -25,7 +25,7 @@ h2{
     font-size: 200%;
     font-weight: 500;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1%;
     color: dimgray;
 }
 h3{
@@ -218,6 +218,14 @@ aside{
     float:left;
     text-align: center;
 }
+.one-thirdhalf{
+    width: 16%;
+    float:left;
+    text-align: center;
+}
+#mittig{
+    text-align: center;
+}
 #bannerlinks{
     width: 33.33%;
     background-clip: white;
@@ -341,6 +349,10 @@ footer.second p{
         margin: 15px 0 20px -25px;
         background: url(../img/sgtlogo.gif);
         display: none;
+    }
+    #bootlogo{
+        max-height: 600px;
+        width: auto;
     }
     #menu-icon{
         display: inline-block;
@@ -707,7 +719,8 @@ table.blueTable tfoot .links a{
 }
 
 #intern{
-    margin: 240px;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 #impressum{
