@@ -35,6 +35,11 @@ h3{
     font-weight: 400;
     color: dimgray;
 }
+h4{
+    font-size: 140%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 p{
     font-family: 'Alegreya Sans', sans-serif;
     color: dimgray;
@@ -537,21 +542,15 @@ table.blueTable tfoot .links a{
 
 /*Button*/
 .btn {
-  margin: 20px;
-  width: 100px;
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 11;
-  -moz-border-radius: 11;
-  border-radius: 11px;
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Verdana;
   margin: 2.4%;
   color: #ffffff;
-  font-size: 16px;
-  padding: 10px 20px 10px 20px;
+  font-size: 15px;
+  padding: 10px;
+  background: #3498db;
   text-decoration: none;
 }
 
@@ -579,6 +578,12 @@ table.blueTable tfoot .links a{
 }
 
 .btn2:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
 
@@ -707,6 +712,11 @@ table.blueTable tfoot .links a{
    color: rgba(255,255,255,0.6);
 }
 
+#coopvereine{
+    text-align: center;
+    margin-right: 4%;
+}
+
 .loginarea{
     background-color: aliceblue;
     width: 30%;
@@ -728,8 +738,19 @@ table.blueTable tfoot .links a{
     font-size: 100%;
     color: aliceblue;
 }
-
-
+#freizeit{
+    font-weight: 500;
+    font-size: 140%;
+    line-height: 130%;
+}
+#freizeit2{
+    font-weight: 500;
+    font-size: 140%;
+    line-height: 130%;
+}
+.spacer{
+    height: 500px;
+}
 
 
 
