@@ -29,6 +29,16 @@
 <!--- Banner ende --->
 <div class="wrapper" id="intern">
         <h1>"Herzlich Willkommen <br>bei der Seglergemeinschaft Thalfingen e.V.!<br> Unsere Homepage befindet sich im Aufbau.</h1>
+    
+    <div class="loginarea">
+           <form name="login">
+
+            <input type="text" placeholder="Username" name="userid">
+            <input type="password" placeholder="password" name="pswrd">
+            <input type="button" onclick="check(this.form)" value="Login" id="loginnext"/>
+
+            </form>  
+        </div>
 
 </div>
     <div class="clearer"></div>
@@ -48,4 +58,20 @@
     </footer>
 <!--- ende unterfooter--->
 </body>
+    
+ <!--- script für login --->
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "SGT" && form.pswrd.value == "sgt1")
+  {
+    window.open('https://josua123.github.io/WebsiteTest/intern.html')
+  }
+ else
+ {
+   alert("falsches Password oder falscher Benutzername!")
+  }
+}
+</script>
 </html>

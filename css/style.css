@@ -87,7 +87,7 @@ header{
 /* Start Navigation style*/
 nav{
     float: right;
-    width: 48%;
+    width: 60%;
     padding: 25px 20px 0 0;
 }
 #menu-icon{
@@ -237,6 +237,15 @@ aside{
     float:left;
     text-align: center;
     background-color: #F5F5F5;
+    color: dimgray;
+    
+}
+#bannerlinksregatta{
+    width: 33.33%;
+    background-clip: white;
+    float:left;
+    text-align: center;
+    background-color: white;
     color: dimgray;
     
 }
@@ -715,6 +724,7 @@ table.blueTable tfoot .links a{
 #coopvereine{
     text-align: center;
     margin-right: 4%;
+    margin-left: 4%;
 }
 
 .loginarea{
@@ -752,7 +762,9 @@ table.blueTable tfoot .links a{
     height: 500px;
 }
 
-
+#coop{
+    margin-bottom: -30px;
+}
 
 
 
