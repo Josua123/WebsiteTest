@@ -725,6 +725,7 @@ table.blueTable tfoot .links a{
     text-align: center;
     margin-right: 4%;
     margin-left: 4%;
+    margin-top: 100px;
 }
 
 .loginarea{
