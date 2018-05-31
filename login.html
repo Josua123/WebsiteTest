@@ -1,120 +1,171 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Segelgemeinschaft Thalfingen</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>	
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
-	<link rel="shortcut icon" type="image/png" href="img/favoicon.png"/>
-</head>
-<body>
-    <header>
-        <div id="header-inner">
-            <a href="index.html" id="logo"></a>
-       
-        <div class="loginarea">
-           <form name="login">
-                <div class="login">
-            <div class="container_50">
-                    <input type="text" placeholder="Username" name="userid">
-                    <input type="password" placeholder="Passwort" name="pswrd">
-                </div>
-                <div class="container_50">
-                    <input type="button" onclick="check(this.form)" value="Login" id="loginnext"/>
-                </div>
-                </div>
-            </form>  
-        </div>
-    
-            <nav>
-                <a href="#" id="menu-icon"></a>
-                <ul>
-                    <li><a href="anfahrt.html">Anfahrt/Impressum</a></li>
-                    <li><a href="regatta.html">Regatta</a></li>
-                    <li><a href="regatta.html">Freizeit</a></li>
-                    <li><a href="verein.html">Verein</a></li>
-                    <li><a href="index.html" class="current">Aktuell</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-<!--- Header ende--->
-     
-<div class="wrapper">
-    <div class="wrapper-inner">
-        <div class="banner">
-            <div id="bannerlinks">
-            <h1>Da lacht das Seglerherz! Überzeugende und konstante Windverhältnisse beim gemeinsamen Segeln am Gardasee rund um die Osterfeiertage.</h1>
-            </div>
-            <div class="two-third">
-            <img src="img/Aktuell.jpg" alt="Banner Anfahrt" id="banner">
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="clear"></div>
-<!--- Banner ende --->
-<div class="wrapper">
-    <div class="wrapper-inner">
-    <section class="one-third" id="training">
-        
-        <div class="spacer"></div>
-        <div id="neues">
-            <img src="img/jugend.JPG" alt="training">
-        </div>
-        
-        </section>
-        <section class="two-third" >
-        <h2>Überschrift</h2>
-        <p id="freizeit">
-            Arbeitseinsatz Frühjahrsputz im April<br>
-            Gemeinsamer Arbeitseinsatz Seerosenernte<br>
-            Sommerfest<br>
-            Gemeinsames Seglerwochenende am Ammersee<br>
-            Jugendfreizeit beim SGS in Günzburg<br>
-            RKU – Sommerfest<br>
-            Arbeitseinsatz Herbstputz im April<br>
-            Nikolausfeier
-        </p>
-        </section>
-        <div class="two-third">
-            <img src="img/Aktuell.jpg" alt="Banner Anfahrt">
-        </div>
-        
-        <p id="freizeit2">Bei unserem Jubiläumsfest im Juni 2015 gab es neben der Festansprache unseres 1. Vorstands Gerhard Fischer die Ehrung der „Männer der ersten Stunde“ und der Gründungsmitglieder; alles musikalisch begleitet vom Shanty-Chor Heidenheim e.V. "Wir sind auf dem richtigen Dampfer". Nach einem tollen Buffet haben wir bis in die frühen Morgenstunden das Tanzbein geschwungen und unser 40-jähriges Bestehen ordentlich gefeiert! </p>
-        </div>
-    </div>
-    <div class="clearer"></div>
-    
-    <footer>   
-        <div class="2">
-            <ul class="social">
-            <li><a href="verein.html "><i class="fa fa-envelope-o"></i></a>Kontakt</li>
-            <li><a href="anfahrt.html"><i class="fa fa-location-arrow"></i></a>Anfahrt</li>
-            <li><a href="https://de.windfinder.com/forecast/thalfingen" target="_blank" rel="noopener"><i class="fa fa-cloud"></i></a>Wetter</li>
-            </ul>
-        </div>
-    </footer>
-<!---ende footer--->
-    <footer class="second">
-        <p>&copy; Seglergemeinschaft Thalfingen e.V</p>
-    </footer>
-<!--- ende unterfooter--->
-    
-<!--- script für login --->
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Login</title>
+
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+
+
+.body{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(http://dewclarke.com/subscribe.png);
+	background-size: cover;
+	-webkit-filter: blur(0px);
+	
+}
+
+
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #F29E20 !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+</style>
+
+  
+
+</head>
+
+<body oncontextmenu="return false">
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Dew<span>Clarke</span></div>
+		</div>
+		<br>
+		<form name="login">
+		<div class="login">
+				<input type="text" placeholder="Please" name="userid"><br>
+				<input type="password" placeholder="Subscribe :)" name="pswrd"><br>
+				<input type="button" onclick="check(this.form)" value="Login"/>
+		</div>
+
+
+
+</form>
 <script language="javascript">
 function check(form)
 {
  
- if(form.userid.value == "SGT" && form.pswrd.value == "sgt1")
+ if(form.userid.value == "subscribe" && form.pswrd.value == "dewclarke")
   {
-    window.open('https://josua123.github.io/WebsiteTest/intern.html')
+    window.open('https://www.youtube.com/c/dewclarke?sub_confirmation=1')
   }
  else
  {
-   alert("falsches Password oder falscher Benutzername!")
+   alert("Please subscribe to my channel for more coding!")
   }
 }
 </script>

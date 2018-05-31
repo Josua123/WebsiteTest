@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Segelgemeinschaft Thalfingen</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/favoicon.png"/>
+</head>
+<body>
+    <header>
+        <div id="header-inner">
+            <a href="index.html" id="logo"></a>
+            <nav>
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="intern.html" class="current">Intern</a></li>
+                    <li><a href="anfahrt.html">Anfahrt/Impressum</a></li>
+                    <li><a href="regatta.html">Regatta</a></li>
+                    <li><a href="freizeit.html">Freizeit</a></li>
+                    <li><a href="verein.html">Verein</a></li>
+                    <li><a href="index.html">Aktuell</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="clear"></div>
+<!--- Banner ende --->
+<div class="wrapper" id="intern">
+        <h1>"Herzlich Willkommen <br>bei der Seglergemeinschaft Thalfingen e.V.!<br> Unsere Homepage befindet sich im Aufbau.</h1>
+    
+    <div class="loginarea">
+           <form name="login">
+
+            <input type="text" placeholder="Username" name="userid">
+            <input type="password" placeholder="password" name="pswrd">
+            <input type="button" onclick="check(this.form)" value="Login" id="loginnext"/>
+
+            </form>  
+        </div>
+
+</div>
+    <div class="clearer"></div>
+
+     <footer>   
+        <div class="2">
+            <ul class="social">
+            <li><a href="verein.html "><i class="fa fa-envelope-o"></i></a>Kontakt</li>
+            <li><a href="anfahrt.html"><i class="fa fa-location-arrow"></i></a>Anfahrt</li>
+            <li><a href="https://de.windfinder.com/forecast/thalfingen" target="_blank" rel="noopener"><i class="fa fa-cloud"></i></a>Wetter</li>
+            </ul>
+        </div>
+    </footer>
+<!---ende footer--->
+    <footer class="second">
+        <p>&copy; Seglergemeinschaft Thalfingen e.V</p>
+    </footer>
+<!--- ende unterfooter--->
+</body>
+    
+ <!--- script für login --->
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "SGT" && form.pswrd.value == "sgt1")
+  {
+    window.open('https://josua123.github.io/WebsiteTest/intern.html')
+  }
+ else
+ {
+   alert("falsches Password oder falscher Benutzername!")
+  }
+}
+</script>
+</html>

@@ -160,6 +160,14 @@ nav ul li a:hover{
     width: 49%;
     float: left;
 }
+.headline{
+    width: 50%;
+    float: left;
+}
+.container_zweimann{
+    width: 49%;
+    float: right;
+}
 .container_100i{
     border: 3px solid green;
     padding: 10px;
@@ -333,6 +341,9 @@ footer.second p{
     h3{
         font-size: 105%;
     }
+    h4{
+        width: 100%;
+    }
     p{
         font-size: 100%;
         width: 100%;
@@ -363,10 +374,6 @@ footer.second p{
         margin: 15px 0 20px -25px;
         background: url(../img/sgtlogo.gif);
         display: none;
-    }
-    #bootlogo{
-        max-height: 600px;
-        width: auto;
     }
     #menu-icon{
         display: inline-block;
@@ -415,6 +422,18 @@ footer.second p{
     .social i{
         font-size: 150%;
     }
+    .container_50{
+        width: 50%;
+    }
+    .headline{
+        width: 50%;
+    }
+    #bannerlinksregatta{
+    margin-top: 30px;
+    width: 100%;
+    float:left;
+    }
+    
 }
 
 /*Profilkarte*/
@@ -496,6 +515,16 @@ a{
     font-style: normal; 
     margin-bottom: 10px; 
     text-transform: none; 
+}
+.telefon{
+    padding-top: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60%;
+    font-size: 13px; 
+    font-style: italic; 
+    line-height: 14pxs;  
+    text-transform: none;
 }
 
 /*Tabelle*/
@@ -767,13 +796,150 @@ table.blueTable tfoot .links a{
     margin-bottom: -30px;
 }
 
+/*Image slider*/
+
+.preview {
+width:100%;
+height:auto;
+}
+ 
+.thumb {
+width:20%;
+margin-right:3px;
+margin-top: 1%;
+}
+ 
+.normal {
+border:3px solid #000000;}
+ 
+.selected {
+border:3px solid #0066ff;}
+
+/*popup*/
+#popupBoxOnePosition{
+    top: 0; 
+    left: 0; 
+    position: fixed; 
+    width: 100%; 
+    height: 120%;
+    background-color: rgba(0,0,0,0.7); 
+    display: none;
+}
+#popupBoxTwoPosition{
+    top: 0; 
+    left: 0; 
+    position: fixed; 
+    width: 100%; 
+    height: 120%;
+    background-color: rgba(0,0,0,0.7); 
+    display: none;
+}
+#popupBoxThreePosition{
+    top: 0; 
+    left: 0; 
+    position: fixed; 
+    width: 100%; 
+    height: 120%;
+    background-color: rgba(0,0,0,0.7); 
+    display: none;
+}
+.popupBoxWrapper{
+    width: 550px; 
+    margin: 50px auto; 
+    text-align: left;
+}
+.popupBoxContent{
+    background-color: #FFF; 
+    padding: 15px;
+    border-radius: 12px;
+}
+.closepopup{
+    float: right;
+    opacity: 0.7;
+    color: #FFF;
+    font-size: 150%;
+    font-weight: 600;
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+#nospace{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/*Popupbox downloads*/
 
 
+/*.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #000;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}*/
 
+.overlay {
+  text-align: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
 
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
 
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 140%;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
 
-
+@media screen and (max-width: 700px){
+  .popup{
+    width: 70%;
+  }
+}
 
 
 

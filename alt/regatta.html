@@ -21,9 +21,10 @@
             <nav>
                 <a href="#" id="menu-icon"></a>
                 <ul>
+                    <li><a href="intern.html">Intern</a></li>
                     <li><a href="anfahrt.html">Anfahrt/Impressum</a></li>
-                    <li><a href="mitglieder.html">Mitglieder</a></li>
                     <li><a href="regatta.html" class="current">Regatta</a></li>
+                    <li><a href="freizeit.html">Freizeit</a></li>
                     <li><a href="verein.html">Verein</a></li>
                     <li><a href="index.html">Aktuell</a></li>
                 </ul>
@@ -37,26 +38,22 @@
             <div id="bootsklaseen">
             <div id="bannerlinksregatta">
                 <h1>Geeignete Bootsklassen für das Revier der SGT</h1>
-                <div class="bootklasse">
-                    <div class="container_50">
+                    <div class="headline">
                         <h4 id="mittig">1-Hand-Boote</h4>
                     </div>
-                    <div class="container_50">
+                    <div class="headline">
                         <h4 id="mittig">2-Hand-Boote</h4>
                     </div>
                     
                     
                     <div class="container_50">
-                        <img src="img/optimist.png" id="bootlogo">
+                        <img src="img/optimist.png">
                         <p id="mittig">Optimist</p>
                     </div>
                     <div class="container_50">
-                        <img src="img/420er.png" id="bootlogo">
+                        <img src="img/420er.png">
                         <p id="mittig">420er</p>
                     </div>
-                    
-                    
-                </div>
                 
             </div>
             </div>
@@ -74,11 +71,11 @@
     <section class="one-third">
         
         <div class="container_50">
-            <img src="img/laser.png" id="bootlogo">
+            <img src="img/laser.png">
             <p id="mittig">Laser</p>
         </div>
         <div class="container_50">
-            <img src="img/korsar.png" id="bootlogo">
+            <img src="img/korsar.png">
                 <p id="mittig">Korsar</p>
             </div>
             
@@ -165,25 +162,7 @@
         
         
         <h2>Laser Cup</h2>
-        <p>im Wechsel mit regionalen und befreundeten Vereinen <br> <a href="img/Laser%20Cup%20Ergebnisse.pdf" target="_blank" rel="noopener">Ergebnisse</a><br> <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">Fotos</a></p>
-        
-        <div id="popupBoxOnePosition">
-			<div class="popupBoxWrapper">
-                <p><a class="closepopup" href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">x</a></p>
-                <div class="clearer"></div>
-				<div class="popupBoxContent">
-					<h4 id="nospace">Fotos vom Laser Cup</h4>
-					<img id="0" class="preview normal" src="" alt="preview" /><br />
-                    <img id="1" class="thumb normal" src="img/180515_Laser%20Cup%201.jpeg" alt="image1" onmouseover="preview(this)"/>
-                    <img id="3" class="thumb normal" src="img/180515_Laser%20Cup%203.jpeg" alt="image3" onmouseover="preview(this)"/>
-                    <img id="4" class="thumb normal" src="img/180515_Laser%20Cup%204.jpeg" alt="image4" onmouseover="preview(this)"/>
-                    <img id="5" class="thumb normal" src="img/180515_Laser%20Cup%205.jpeg" alt="image5" onmouseover="preview(this)"/>
-				</div>
-                
-			</div>
-		</div>
-
-        
+        <p>im Wechsel mit regionalen und befreundeten Vereinen <br> <a href="url">Ergebnisse</a></p>
         
         
         <h2>Frühjahrs-Regatta (Seggerling Rangliste)</h2>
@@ -237,7 +216,6 @@
         </div>
     </section>
         
-
     
 </div>
     </div>
@@ -272,31 +250,6 @@ function check(form)
    alert("falsches Password oder falscher Benutzername!")
   }
 }
-</script>
-    
-<script> 
-    var lastImg = 1; //Set initial thumbnail and preview
-    document.getElementById(0).src = document.getElementById(lastImg).src;
-    document.getElementById(lastImg).className = "thumb selected";
- 
-    function preview(img) {
-        document.getElementById(lastImg).className = "thumb normal";
-        img.className = "thumb selected";
-        document.getElementById(0).src = img.src;
-        lastImg = img.id
-    }
-</script>
-    
-<script type="text/javascript">
-    <!--
-    function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if(e.style.display == 'block')
-    e.style.display = 'none';
-    else
-    e.style.display = 'block';
-}
-			//-->
 </script>
 </body>
 </html>
