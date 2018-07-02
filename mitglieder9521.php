@@ -1,3 +1,8 @@
+<?php
+    date_default_timezone_set('Europe/Germany')
+    include 'comments.inc.php';
+?>
+
 <!DOCTYPE html> 
 <html>
 <head>
@@ -31,7 +36,11 @@
             </nav>
         </div>
     </header>
-<!--- Header ende---> 
+<body>
+    
+
+
+<!- Header ende-> 
 <div class="wrapper">
     <div class="wrapper-inner">
         <div class="banner">
@@ -51,7 +60,7 @@
 </div>
 
 <div class="clear"></div>
-<!--- Banner ende --->
+<!- Banner ende ->
 <div class="wrapper">
     <div class="wrapper-inner">
     <section class="one-third">
@@ -60,55 +69,17 @@
         
         
         
-        
-        <!---
+       <?php 
+        echo "<form method='POST' action='".setComment()."';>
+            <input type='hidden' name='uid' value='Anonymous'>
+            <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+            <textarea name='message'></textarea><break>
+            <button type='submit' name='submit'>Eintragen</button>
+        </form>";
         <?php
-        //mit datenbank verbinden
-            mysql_connect("localhost", "web24296225","PuAXezq4");
-            mysql_select_db("gastbuch");
         
-
-        //formular
-
-
-
-
-        //anzeige area
-
-
-
-
-        $query = mysql_query("SELECT * FROM gastbuch ORDER BY id DESC");
-        $numrows = mysql_num_rows($query);
-        if($numrows > 0)
-        {
-            while($row = mysql_fetch_assoc($query))
-            {
-                $id = $row['id'];
-                $nachricht = $row['nachricht'];
-                $telefonnummer = $row['telefonnummer'];
-                $email = $row['email'];
-                $datum = $row['datum'];
-                $zeit = $row['zeit'];
-                
-                echo "<div>
-                    $name - at $zeit on $datum </hr>
-                    $message
-                </div>";
-            }
-        }
-        else
-        echo "Keine Posts gefunden";
-
-
-
-
-
-
-
-        mysql_close();
         ?>
-        --->
+        
         
         <h5>zur neuen Anzeigen-Eingabe bitte hier klicken.</h5>
         <P>01.04.2018: Muster Kückenteam sucht Helfer!! Bitte bis zum 15.04.18 melden.<br>Silke Tel 0731/345632</P>
@@ -128,7 +99,7 @@
         <a href="#popup2">Dienstplan</a><br>
         <a href="img/HausordnungSGT" target="_blank" rel="noopener">Haus- und Hafen-Ordnung</a><br>
         <a href="#popup3">private Vereinsheim-Nutzung</a><br>
-        <!--- Popup Liegeplaetze --->
+        <!- Popup Liegeplaetze ->
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Downloads:</h2>
@@ -140,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <!--- Popup dienstplan --->
+        <!- Popup dienstplan ->
         <div id="popup2" class="overlay">
             <div class="popup">
                 <h2>Downloads:</h2>
@@ -150,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <!--- Popup private nutzung --->
+        <!- Popup private nutzung ->
         <div id="popup3" class="overlay">
             <div class="popup">
                 <h2>Downloads:</h2>
@@ -160,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <!--- Fotogalarie --->
+        <!- Fotogalarie ->
         <div id="popup4" class="overlay">
             <div class="popup">
                 <h2>Fotogalarie Downloads:</h2>
@@ -222,20 +193,6 @@
     </footer>
 <!--- ende unterfooter--->  
 <!--- script für login --->
-<script language="javascript">
-function check(form)
-{
- 
- if(form.userid.value == "SGT" && form.pswrd.value == "sgt1")
-  {
-    window.open('https://josua123.github.io/WebsiteTest/intern.html')
-  }
- else
- {
-   alert("falsches Password oder falscher Benutzername!")
-  }
-}
-</script>
     
 <script> 
     var lastImg = 1; //Set initial thumbnail and preview
