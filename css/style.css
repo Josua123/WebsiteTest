@@ -181,6 +181,11 @@ nav ul li a:hover{
 	float: left;
     background: #FFF;
 }
+.container_100{
+    text-align: center;
+    width: 100%;
+	float: left;
+}
 .clearer{
     clear:both;
 }
@@ -241,6 +246,7 @@ aside{
 }
 #mittig{
     text-align: center;
+    font-size: 90%;
 }
 #bannerlinks{
     width: 33.33%;
